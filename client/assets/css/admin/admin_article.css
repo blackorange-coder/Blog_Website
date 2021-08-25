@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body {
+    height: 100%;
+  
+} */
+
+.heart {
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid whitesmoke;
+}
+
+
+/* form {
+    padding-bottom: 20px;
+} */
+
+.card-content {
+    width: 80%;
+    height: 800px;
+    margin: 0px auto;
+}
+
+.inputEdit {
+    border: none;
+}
+
+#mceu_49 {
+    height: 218px;
+}
+
+#mceu_49-body {
+    height: 278px;
+}
+
+.mce-container #mceu_52 {
+    height: 500px;
+}

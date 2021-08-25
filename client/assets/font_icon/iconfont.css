@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2495236 */
+  src: url('iconfont.woff2?t=1629607138905') format('woff2'),
+       url('iconfont.woff?t=1629607138905') format('woff'),
+       url('iconfont.ttf?t=1629607138905') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xuhao:before {
+  content: "\e6c6";
+}
+
+.icon-index:before {
+  content: "\e8b0";
+}
+
+.icon-gengduo:before {
+  content: "\e60b";
+}
+
+.icon-jiazai:before {
+  content: "\e65e";
+}
+
+.icon-douyin:before {
+  content: "\e60d";
+}
+
+.icon-weibo:before {
+  content: "\e603";
+}
+
+.icon-bzhan:before {
+  content: "\e604";
+}
+
+.icon-zuoyoujiantou-copy-copy-copy-copy:before {
+  content: "\e601";
+}
+
+.icon-col-left:before {
+  content: "\e602";
+}
+
+.icon-iconfontguanyuwo:before {
+  content: "\e60f";
+}
+
+.icon-menu-two:before {
+  content: "\e600";
+}
+
+.icon-wenzhang_huaban:before {
+  content: "\e62e";
+}
+
+.icon-electronics:before {
+  content: "\e66e";
+}
+
+.icon-home-filling:before {
+  content: "\e68d";
+}
+
+.icon-chengzi:before {
+  content: "\e60e";
+}
+
+.icon-chengzi1:before {
+  content: "\e616";
+}
+
+.icon-chengzi2:before {
+  content: "\e6ad";
+}
+

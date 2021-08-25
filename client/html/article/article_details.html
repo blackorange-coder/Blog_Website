@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/public.css">
+    <link rel="stylesheet" href="../../assets/css/article/article_details.css">
+    <title>文章详情页</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <li class="item"><a href="../../index.html">首页</a></li>
+        <li class="item" id="item1">
+            <a href="javascript:;" class="item-name" id=" ">文章</a>
+            <ul class="item-son1">
+                <li class="item-son"><a href="javascript:;">技术学习</a></li>
+                <li class="item-son"><a href="javascript:;">生活记录</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="./html/weblinks/weblinks_index.html">网站仓库</a></li>
+        <li class="item"><a href="./html/admin/admin_login.html">后台管理</a></li>
+        <li class="item" id="item2"><a href="./html/aboutMe/aboutme_ch.html" class="item-name">关于我</a></li>
+    </div>
+    <!-- 展示文章详情的区域 -->
+    <div class="content">
+        <div class="article_content">
+            <h2 class="article_title"></h2>
+            <p class="article_date"></p>
+            <div class="article_body"></div>
+        </div>
+    </div>
+
+
+    <!-- 底部 开始-->
+    <div class="foot">
+        <div>西北民族大学 | 通信工程</div>
+    </div>
+    <!-- 底部 结束-->
+
+
+
+
+    <!-- <script>
+        window.addEventListener('load', function() {
+            function rand() {
+                span = document.getElementById('spanspan');
+                i = Math.random() * 5;
+                span.innerHTML = i;
+            }
+            window.onresize = function() {
+                window.location.reload();
+                rand(); //窗口改变执行函数
+            }
+            rand(); //打开页面先进行函数执行
+
+            if (screen.availWidth <= 540) {
+                var moblie = document.querySelector('#moblie');
+                var nav = document.querySelector('.nav');
+
+                var item1 = document.querySelector('#item1');
+                var item2 = document.querySelector('#item2');
+                var itemson1 = document.querySelector('.item-son1');
+                var itemson2 = document.querySelector('.item-son2');
+                nav.style.display = 'none';
+                moblie.addEventListener('click', () => {
+                    if (nav.style.display === 'none') {
+                        nav.style.display = 'block';
+                    } else {
+                        nav.style.display = 'none';
+                    }
+                })
+
+
+                itemson1.style.display = 'none';
+                item1.addEventListener('click', () => {
+                    if (itemson1.style.display === 'none') {
+                        itemson1.style.display = 'block';
+                    } else {
+                        itemson1.style.display = 'none';
+                    }
+                })
+                itemson2.style.display = 'none';
+                item2.addEventListener('click', () => {
+                    if (itemson2.style.display === 'none') {
+                        itemson2.style.display = 'block';
+                    } else {
+                        itemson2.style.display = 'none';
+                    }
+                })
+            } else {
+                var item1 = document.querySelector('#item1');
+                var item2 = document.querySelector('#item2');
+                var itemson1 = document.querySelector('.item-son1');
+                var itemson2 = document.querySelector('.item-son2');
+
+                itemson1.style.display = 'none';
+                item1.addEventListener('mouseover', () => {
+                    if (itemson1.style.display === 'none') {
+                        itemson1.style.display = 'block';
+                    } else {
+                        itemson1.style.display = 'none';
+                    }
+                })
+                item1.addEventListener('mouseout', () => {
+                    itemson1.style.display = 'none';
+                })
+                itemson2.style.display = 'none';
+                item2.addEventListener('mouseover', () => {
+                    if (itemson2.style.display === 'none') {
+                        itemson2.style.display = 'block';
+                    } else {
+                        itemson2.style.display = 'none';
+                    }
+                })
+                item2.addEventListener('mouseout', () => {
+                    itemson2.style.display = 'none';
+                })
+            }
+        })
+    </script> -->
+    <script src="../../assets/lib/jQuery.js"></script>
+    <script src="../../assets/js/public.js"></script>
+    <script src="../../assets/js/article/article_details.js"></script>
+
+</body>
+
+</html>

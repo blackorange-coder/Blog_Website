@@ -1,0 +1,128 @@
+{
+  "id": "2495236",
+  "name": "myfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "这是一个自己使用的字体图标",
+  "glyphs": [
+    {
+      "icon_id": "12399314",
+      "name": "序号",
+      "font_class": "xuhao",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "7935503",
+      "name": "首页-选中",
+      "font_class": "index",
+      "unicode": "e8b0",
+      "unicode_decimal": 59568
+    },
+    {
+      "icon_id": "7131831",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "11290249",
+      "name": "加载",
+      "font_class": "jiazai",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "6068391",
+      "name": "抖音",
+      "font_class": "douyin",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "12863263",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "17784307",
+      "name": "b站",
+      "font_class": "bzhan",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "2466307",
+      "name": "左右箭头",
+      "font_class": "zuoyoujiantou-copy-copy-copy-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9201987",
+      "name": "左右箭头",
+      "font_class": "col-left",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "611687",
+      "name": "关于我",
+      "font_class": "iconfontguanyuwo",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "18697561",
+      "name": "菜单",
+      "font_class": "menu-two",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12753473",
+      "name": "文章",
+      "font_class": "wenzhang_huaban",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "15838465",
+      "name": "electronics",
+      "font_class": "electronics",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "15838619",
+      "name": "home-filling",
+      "font_class": "home-filling",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "5183730",
+      "name": "橙子",
+      "font_class": "chengzi",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "5219159",
+      "name": "橙子",
+      "font_class": "chengzi1",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "5483083",
+      "name": "橙子",
+      "font_class": "chengzi2",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    }
+  ]
+}

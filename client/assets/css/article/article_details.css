@@ -1,0 +1,16 @@
+.article_content {
+    width: 68%;
+    margin: 12px 0 18px 20px;
+    background-color: white;
+}
+
+.article_date {
+    margin: 10px 0 12px 20px;
+}
+
+.article_body {
+    /* 两端对齐 */
+    text-align: justify;
+    /* 文本首航缩进2字符 */
+    text-indent: 2em;
+}

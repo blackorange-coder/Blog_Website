@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../assets/font_icon/iconfont.css">
+    <link rel="stylesheet" href="../../assets/css/public.css">
+    <link rel="stylesheet" href="../../assets/css/admin/admin_index.css">
+    <script>
+        if (!localStorage.getItem('token')) {
+            location.href = './admin_login.html'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="heart">
+        <div class="nav">
+            <li class="item"><a href="../../index.html">首页</a></li>
+            <li class="item" id="item1">
+                <a href="javascript:;" class="item-name" id=" ">文章</a>
+                <ul class="item-son1">
+                    <li class="item-son"><a href="javascript:;">技术学习</a></li>
+                    <li class="item-son"><a href="javascript:;">生活记录</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="../weblinks/weblinks_index.html">网站仓库</a></li>
+            <li class="item"><a href="javascript:;">后台管理</a></li>
+            <li class="item" id="item2"><a href="../aboutMe/aboutme_ch.html" class="item-name">关于我</a></li>
+        </div>
+        <!-- 页面展示区域 -->
+        <div class="content">
+            <div class="left-content">
+                <div class="myPic">
+                    <span id="pic">昵</span>
+                    <span id="nickname" style="font-size: 15px;">昵称</span>
+                </div>
+                <div class="left-nav">
+                    <div class="left-nav-son left-nav1">
+                        <a href="./admin_dataAll.html" target="l_blank" class="left-nav-a"><span class="iconfont icon-index"></span>后台总览</a>
+                    </div>
+                    <div class="left-nav-son left-nav2">
+                        <a href="javascript:;" class="left-nav-a"><span class="iconfont icon-wenzhang_huaban" ></span>文章管理
+                            <span class="iconfont icon-col-left"></span></a>
+                        <ul class="son">
+                            <li>
+                                <a href="../../html/admin/admin_article.html" target="l_blank"><span class="iconfont icon-xuhao"></span>发表文章</a>
+                            </li>
+                            <li>
+                                <a href="../../html/admin/admin_article_delete.html" target="l_blank"><span class="iconfont icon-xuhao"></span>删除文章</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-nav-son left-nav3">
+                        <a href="javascript:;" class="left-nav-a"><span class="iconfont icon-electronics" ></span>网库管理
+                            <span class="iconfont icon-col-left"></a>
+                        <ul class="son">
+                            <li>
+                                <a href="../../html/admin/admin_article.html" target="l_blank"><span class="iconfont icon-xuhao"></span>分类管理</a>
+                            </li>
+                            <li>
+                                <a href="../../html/admin/admin_article.html" target="l_blank"><span class="iconfont icon-xuhao"></span>网址管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-nav-son left-nav3">
+                        <a href="./admin_info.html" target="l_blank" class="left-nav-a"><span class="iconfont icon-iconfontguanyuwo" ></span>个人中心
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe src='./admin_article.html' width='100%' height='100%' frameborder='0' name="l_blank" id="_blank"></iframe>
+
+
+        <!-- 底部 开始-->
+        <div class="foot">
+            <div>Copyright @ 2021 西北民族大学 | 通信工程</div>
+        </div>
+    </div>
+
+
+
+    <script src="../../assets/lib/jQuery.js"></script>
+    <script src="../../assets/js/public.js"></script>
+    <script src="../../assets/js/admin/admin_index.js"></script>
+</body>
+
+</html>

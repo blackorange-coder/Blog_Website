@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/public.css">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: royalblue;
+        }
+        
+        .th {
+            text-align: center;
+        }
+        
+        .tab {
+            float: left;
+            height: 20px;
+            overflow: hidden;
+            /* background-color: antiquewhite; */
+            border: 1px solid rgb(16, 16, 16);
+        }
+        
+        .tab1 {
+            width: 50%;
+        }
+        
+        .tab2 {
+            width: 20%;
+        }
+        
+        .tab3 {
+            width: 10%;
+            text-align: center;
+        }
+        
+        .content {
+            height: 500px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <span class="tab tab1 th">文章标题</span>
+            <span class="tab tab2 th">发表日期</span>
+            <span class="tab tab3 th">相关操作</span>
+        </div>
+        <div class="in-content">
+
+        </div>
+    </div>
+    <script src="../../assets/lib/jQuery.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var content = document.querySelector('.in-content');
+            $.ajax({
+                method: 'GET',
+                url: '/api/article/list',
+                success: function(res) {
+                    var arr = res.messages;
+                    console.log(arr);
+                    for (var i = arr.length - 1; i >= 0; i--) {
+                        // console.log(arr[i].Id);
+                        content.innerHTML += `
+                            <span class="tab tab1"> <a href="../article/article_details.html?id=${arr[i].Id}" target='__blank'>${arr[i].title}</a></span>
+                            <span class="tab tab2">${arr[i].date}</span>
+                            <span class="tab tab3"><button id="btnDelte" class='${arr[i].Id}'>删除</button></span>
+                        `;
+                    }
+                    var btnDelte = document.querySelectorAll('#btnDelte');
+                    for (var j = 0; j < btnDelte.length; j++) {
+                        btnDelte[j].addEventListener('click', function() {
+                            var id = this.className;
+                            console.log(this);
+                            console.log(id);
+                            deleteArticle(id);
+                            // initArticleList();
+                            location.reload();
+                        })
+                    }
+
+
+                }
+            })
+
+            function deleteArticle(id) {
+                $.ajax({
+                    method: 'POST',
+                    url: '/my/delete/article',
+                    data: {
+                        id
+                    },
+                    headers: {
+                        Authorization: localStorage.getItem('token') || ''
+                    },
+                    success: function(res) {
+                        console.log(res);
+                    }
+                })
+            }
+
+
+        })
+    </script>
+</body>
+
+</html>

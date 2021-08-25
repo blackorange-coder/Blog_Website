@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../font_icon/iconfont.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" media="screen and (min-width:541px)" href="../css/public.css">
+    <link rel="stylesheet" media="screen and (max-width:540px)" href="../css/mpublic.css">
+    <title>文章页</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .father {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .son {
+            position: fixed;
+            top: 40%;
+            left: 45%;
+            width: 100px;
+            font-size: 100px;
+            color: coral;
+            animation: loading 3s linear 10 forwards;
+        }
+        
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 加载动画 -->
+    <div class="father">
+        <div class="son iconfont">&#xe65e;</div>
+    </div>
+    <script>
+        var father = document.querySelector('.father');
+        var son = document.querySelector('.son');
+        setTimeout(() => {
+            father.style.display = 'none';
+        }, 1500);
+    </script>
+
+    <!-- 头部导航 -->
+    <li class="item" id="moblie">菜单</li>
+    <div class="nav">
+        <li class="item"><a href="#">First</a></li>
+        <li class="item" id="item1">
+            <a href="#" class="item-name" id="">Second</a>
+            <ul class="item-son1">
+                <li class="item-son"><a href="#">second-list</a></li>
+                <li class="item-son"><a href="#">second-list</a></li>
+                <li class="item-son"><a href="#">second-list</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">Thrid</a></li>
+        <!-- ------------------------------------------------------------ -->
+        <li class="item" id="item2">
+            <a href="#" class="item-name">Fourth</a>
+            <ul class="item-son2">
+                <li class="item-son"><a href="#">second-list</a></li>
+                <li class="item-son"><a href="#">second-list</a></li>
+                <li class="item-son"><a href="#">second-list</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">Index</a></li>
+        <!-- ------------------------------------------------------------ -->
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content_body">
+        <div class="siderleft">siderleft---------</div>
+        <div class="right">right</div>
+        <div style="clear:both"></div>
+    </div>
+    <!-- 底部区域 -->
+    <div class="foot">
+        <div>西北民族大学 | 通信工程</div>
+    </div>
+    <span id="spanspan" style="display:none "></span>
+
+
+
+    <script>
+        window.addEventListener('load', function() {
+            function rand() {
+                span = document.getElementById('spanspan');
+                i = Math.random() * 5;
+                span.innerHTML = i;
+            }
+            window.onresize = function() {
+                window.location.reload();
+                rand(); //窗口改变执行函数
+            }
+            rand(); //打开页面先进行函数执行
+
+            if (screen.availWidth <= 540) {
+                var moblie = document.querySelector('#moblie');
+                var nav = document.querySelector('.nav');
+
+                var item1 = document.querySelector('#item1');
+                var item2 = document.querySelector('#item2');
+                var itemson1 = document.querySelector('.item-son1');
+                var itemson2 = document.querySelector('.item-son2');
+                nav.style.display = 'none';
+                moblie.addEventListener('click', () => {
+                    if (nav.style.display === 'none') {
+                        nav.style.display = 'block';
+                    } else {
+                        nav.style.display = 'none';
+                    }
+                })
+
+
+                itemson1.style.display = 'none';
+                item1.addEventListener('click', () => {
+                    if (itemson1.style.display === 'none') {
+                        itemson1.style.display = 'block';
+                    } else {
+                        itemson1.style.display = 'none';
+                    }
+                })
+                itemson2.style.display = 'none';
+                item2.addEventListener('click', () => {
+                    if (itemson2.style.display === 'none') {
+                        itemson2.style.display = 'block';
+                    } else {
+                        itemson2.style.display = 'none';
+                    }
+                })
+            } else {
+                var item1 = document.querySelector('#item1');
+                var item2 = document.querySelector('#item2');
+                var itemson1 = document.querySelector('.item-son1');
+                var itemson2 = document.querySelector('.item-son2');
+
+                itemson1.style.display = 'none';
+                item1.addEventListener('mouseover', () => {
+                    if (itemson1.style.display === 'none') {
+                        itemson1.style.display = 'block';
+                    } else {
+                        itemson1.style.display = 'none';
+                    }
+                })
+                item1.addEventListener('mouseout', () => {
+                    itemson1.style.display = 'none';
+                })
+                itemson2.style.display = 'none';
+                item2.addEventListener('mouseover', () => {
+                    if (itemson2.style.display === 'none') {
+                        itemson2.style.display = 'block';
+                    } else {
+                        itemson2.style.display = 'none';
+                    }
+                })
+                item2.addEventListener('mouseout', () => {
+                    itemson2.style.display = 'none';
+                })
+            }
+        })
+    </script>
+
+</body>
+
+</html>
