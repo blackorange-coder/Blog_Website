@@ -66,17 +66,12 @@ a {
     max-width: 1260px;
 }
 
-
-/* 弹出框son */
-
-.son {
-    display: none;
-    position: absolute;
-    top: 100px;
-    left: 28%;
-    width: 500px;
-    height: 500px;
-    background-color: rgb(153, 153, 153);
+@media screen and (max-width:500px) {
+    .nav {
+        position: fixed;
+        top: 30px;
+        max-width: 1260px;
+    }
 }
 
 
@@ -103,15 +98,8 @@ a {
 
 .mbl {
     width: 98%;
-    /* height: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; */
     border-bottom: 2px solid rgb(244, 245, 245);
     padding: 2%;
-    /* height: 50px; */
 }
 
 .mbl>h3 a {
@@ -137,6 +125,22 @@ a {
     width: 28%;
     border-radius: 8px;
     background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:500px) {
+    .sonl,
+    .sonr {
+        float: none;
+    }
+    .sonl,
+    .sonr {
+        width: 100%;
+    }
+    .sonr {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 8px;
+    }
 }
 
 .mbr,

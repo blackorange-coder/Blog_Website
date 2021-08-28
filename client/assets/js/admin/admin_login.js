@@ -2,6 +2,8 @@ window.addEventListener('load', function() {
     var usernames = document.querySelector('.username');
     var passwords = document.querySelector('.password');
     var btnLogin = document.getElementById('btnLogin');
+
+    //登陆处理函数
     btnLogin.addEventListener('click', function(e) {
         e.preventDefault();
 
@@ -45,6 +47,9 @@ window.addEventListener('load', function() {
         usernames.value = '';
         passwords.value = '';
     })
+
+
+
 
 
 

@@ -1,4 +1,6 @@
 window.addEventListener('load', function() {
+
+
     function initLeftNav() {
         var nav_item = document.querySelectorAll('.item');
         for (var i = 0; i < nav_item.length; i++) {
@@ -21,6 +23,26 @@ window.addEventListener('load', function() {
                 initLeftNav();
                 that.style.display = 'none';
             }
+        })
+
+        //移动端处理
+        var menu = document.querySelector('.menu');
+        var nav = document.querySelector('.nav');
+        var cover = document.querySelector('.cover'); //获取遮罩层
+
+        nav.style.display = 'none';
+        menu.addEventListener('click', function() {
+            if (nav.style.display === 'none') {
+                nav.style.display = 'block';
+                cover.style.display = 'block';
+            } else if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+                cover.style.display = 'none';
+            }
+        })
+        cover.addEventListener('click', function() {
+            nav.style.display = 'none';
+            cover.style.display = 'none';
         })
     }
 

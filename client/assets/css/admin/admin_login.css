@@ -43,6 +43,10 @@ button {
 }
 
 @media screen and (max-width:500px) {
+    .nav {
+        position: fixed;
+        height: 100%;
+    }
     .form-area {
         width: 80%;
         height: 280px;
